@@ -2,11 +2,12 @@ package vitals;
 
 public class Main {
     static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
-        if(temperature < 0 || temperature > 45) {
+        
+        if(!isInRange(temperature, 0, 45)) {
             System.out.println("Temperature is out of range!");
             return false;
         } 
-        if(soc < 20 || soc > 80) {
+        if(!isInRange(temperature, 20, 80)){
             System.out.println("State of Charge is out of range!");
             return false;
         }
