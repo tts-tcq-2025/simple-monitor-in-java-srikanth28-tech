@@ -7,7 +7,7 @@ public class Main {
             System.out.println("Temperature is out of range!");
             return false;
         } 
-        if(!isInRange(temperature, 20, 80)){
+        if(!isInRange(soc, 20, 80)){
             System.out.println("State of Charge is out of range!");
             return false;
         }
